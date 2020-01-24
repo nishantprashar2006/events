@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        url: jdbc:sqlserver://event-organizer.cespld5ayvws.us-west-1.rds.amazonaws.com;databaseName=event-organizer
+        username: admin
+        password: Deepu2006
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+    jpa:
+        show-sql: true
+        hibernate:
+         dialect: org.hibernate.dialect.SQLServer2012Dialect
+         ddl-auto: update
+         naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    jackson:
+     serialization:
+      fail-on-empty-beans: false
